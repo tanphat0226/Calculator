@@ -86,12 +86,6 @@ function clear () {
 }
 
 function backspace(value) {
-    if (typeof value === 'string') {
-        displayValue = ''
-        displayEl.innerHTML = ''
-        return
-    }
-
     const removed = value.slice(0, -1)
     displayValue = removed
     showDisplay(removed)
